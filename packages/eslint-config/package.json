@@ -1,6 +1,6 @@
 {
   "name": "@nielse63/eslint-config",
-  "version": "0.0.1-0",
+  "version": "0.0.0",
   "description": "My custom eslint-config",
   "keywords": [
     "eslint",
@@ -19,7 +19,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+    "access": "public"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 {
   "name": "@nielse63/eslint-config",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-0",
   "description": "My custom eslint-config",
   "keywords": [
     "eslint",
@@ -19,7 +19,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.yarnpkg.com"
+    "registry": "https://registry.npmjs.org"
   },
   "repository": {
     "type": "git",
@@ -44,6 +44,5 @@
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-unicorn": "^5.0.0"
-  },
-  "gitHead": "f8a7bcae08d6e7d84e9747d8aaeb98864cb257bd"
+  }
 }

@@ -1,0 +1,49 @@
+{
+  "name": "@nielse63/eslint-config",
+  "version": "0.0.0",
+  "description": "My custom eslint-config",
+  "keywords": [
+    "eslint",
+    "lint",
+    "style",
+    "guide"
+  ],
+  "author": "Erik Nielsen <erik@312development.com> (https://312development.com)",
+  "homepage": "https://github.com/nielse63/nielse63/tree/master/packages/eslint-config",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nielse63/nielse63.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/nielse63/nielse63/issues"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-unicorn": "^5.0.0"
+  },
+  "peerDependencies": {
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-unicorn": "^5.0.0"
+  },
+  "gitHead": "f8a7bcae08d6e7d84e9747d8aaeb98864cb257bd"
+}

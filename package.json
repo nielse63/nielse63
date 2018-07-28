@@ -1,0 +1,11 @@
+{
+  "name": "nielse63",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nielse63/nielse63.git",
+  "author": "Erik Nielsen <erik@312development.com> (https://312development.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.0.0-rc.0"
+  }
+}

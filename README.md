@@ -1,3 +1,3 @@
 # nielse63
 
-> A big ole' monorepo or scoped packages
+> A big ole' monorepo of scoped packages

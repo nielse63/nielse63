@@ -18,7 +18,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.yarnpkg.com"
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,6 @@
   },
   "bugs": {
     "url": "https://github.com/nielse63/nielse63/issues"
-  }
+  },
+  "gitHead": "02b8dc12d252bb21ae4159c0224e71feea55581f"
 }

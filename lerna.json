@@ -5,6 +5,7 @@
   ],
   "command": {
     "publish": {
+      "access": "public",
       "npmClient": "yarn",
       "allowBranch": "master",
       "ignoreChanges": [

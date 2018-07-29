@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "pub": "lerna publish --force-publish=* --exact --skip-temp-tag",
-    "new": "lerna create --access=public --license=MIT",
+    "new": "lerna --access=public --license=MIT create",
     "clean": "lerna clean --yes"
   },
   "devDependencies": {

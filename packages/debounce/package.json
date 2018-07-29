@@ -1,0 +1,33 @@
+{
+  "name": "@nielse63/debounce",
+  "version": "0.0.1-0",
+  "description": "Super small, super slim debounce function for node",
+  "keywords": [
+    "debounce",
+    "utilities"
+  ],
+  "author": "Erik Nielsen <erik@312development.com> (https://312development.com)",
+  "homepage": "https://github.com/nielse63/nielse63/tree/master/packages/debounce",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nielse63/nielse63.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/nielse63/nielse63/issues"
+  }
+}

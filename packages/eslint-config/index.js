@@ -1,4 +1,2 @@
 
-const config = require('./lib/eslint-config');
-
-module.exports = config;
+module.exports = require('./lib/eslint-config');

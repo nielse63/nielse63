@@ -4,6 +4,11 @@
   "repository": "https://github.com/nielse63/nielse63.git",
   "author": "Erik Nielsen <erik@312development.com> (https://312development.com)",
   "license": "MIT",
+  "scripts": {
+    "pub": "lerna publish --force-publish=* --exact --skip-temp-tag",
+    "new": "lerna create --access=public --license=MIT",
+    "clean": "lerna clean --yes"
+  },
   "devDependencies": {
     "eslint": "^5.2.0",
     "lerna": "^3.0.0-rc.0"

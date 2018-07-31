@@ -3,19 +3,14 @@
   "packages": [
     "packages/*"
   ],
+  "useWorkspaces": true,
   "npmClient": "yarn",
   "command": {
     "publish": {
-      "npmClient": "yarn",
       "allowBranch": "master",
       "ignoreChanges": [
         "*.md",
         "LICENSE"
-      ]
-    },
-    "bootstrap": {
-      "npmClientArgs": [
-        "--no-package-lock"
       ]
     }
   }

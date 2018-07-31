@@ -1,0 +1,39 @@
+---
+language: node_js
+node_js:
+  - node
+cache:
+  yarn: true
+  directories:
+    - node_modules
+    - "$HOME/.nvm"
+dist: trusty
+
+# hooks
+before_install:
+  - npm config set spin false
+
+# env vars
+env:
+  global:
+    - JOBS=1
+    - NODE_ENV=test
+
+# build stage defs
+jobs:
+  include:
+    # precache npm packages
+    - stage: precache
+      name: "Cache Dependencies"
+      script: true
+    # lint src
+    - stage: linting
+      script: yarn lint:js
+      name: "Lint JS"
+    - script: yarn lint:md
+      name: "Lint Markdown"
+
+    # run tests
+    - stage: tests
+      script: yarn test
+      name: "Unit Tests"

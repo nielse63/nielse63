@@ -42,5 +42,16 @@ module.exports = {
         jest: true,
       },
     },
+    {
+      files: [
+        'scripts/**',
+      ],
+      rules: {
+        'no-console':                        'off',
+        'import/no-extraneous-dependencies': ['error', {
+          devDependencies: true,
+        }],
+      },
+    },
   ],
 };

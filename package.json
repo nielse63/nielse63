@@ -1,7 +1,4 @@
 {
-  "name": "nielse63",
-  "version": "1.0.0",
-  "repository": "https://github.com/nielse63/nielse63.git",
   "author": "Erik Nielsen <erik@312development.com> (https://312development.com)",
   "license": "MIT",
   "private": true,
@@ -10,19 +7,35 @@
   ],
   "scripts": {
     "release": "lerna publish --exact --independent",
-    "new": "lerna create",
+    "new": "node scripts/new",
     "clean": "lerna clean --yes && rm -rf node_modules *.log coverage templates",
     "bootstrap": "yarn && lerna bootstrap",
-    "lint": "eslint . --fix",
+    "lint:js": "eslint . --fix",
+    "lint:md": "markdownlint -i **/node_modules ./*.md packages/*/*.md",
     "test": "jest"
+  },
+  "engines": {
+    "node": ">= 10.x",
+    "npm": ">= 6.x",
+    "yarn": ">= 1.x"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
+    "copy-dir": "^0.4.0",
     "eslint": "^5.2.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-unicorn": "^5.0.0",
+    "globby": "^8.0.1",
     "jest": "^23.4.2",
-    "lerna": "^3.0.0-rc.0"
+    "lerna": "^3.0.0-rc.0",
+    "lint-staged": "^7.2.0",
+    "markdownlint-cli": "^0.12.0",
+    "remark": "^9.0.0",
+    "remark-license": "^4.0.1",
+    "yorkie": "^1.0.3"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
   }
 }

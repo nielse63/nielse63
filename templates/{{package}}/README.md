@@ -1,4 +1,4 @@
-# `@nielse63/kebabcase`
+# `@nielse63/{{package}}`
 
 > TODO: description
 
@@ -7,14 +7,14 @@
 Install with Yarn or npm
 
 ```bash
-yarn add --dev @nielse63/kebabcase
-npm install --dev @nielse63/kebabcase
+yarn add --dev @nielse63/{{package}}
+npm install --dev @nielse63/{{package}}
 ```
 
 ## Usage
 
 ```js
-const kebabcase = require('@nielse63/kebabcase');
+const {{snakeName}} = require('@nielse63/{{package}}');
 
 // TODO: DEMONSTRATE API
 ```

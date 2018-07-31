@@ -1,0 +1,31 @@
+---
+language: node_js
+node_js:
+  - node
+cache:
+  yarn: true
+  directories:
+    - node_modules
+    - "$HOME/.nvm"
+dist: trusty
+
+# hooks
+before_install:
+  - npm config set spin false
+
+# env vars
+env:
+  global:
+    - JOBS=1
+    - NODE_ENV=test
+
+# build stage defs
+jobs:
+  include:
+    # run tests
+    - stage: tests
+      script: yarn test
+      name: "Unit Tests"
+      after_success:
+        - npm i -g coveralls
+        - cat coverage/lcov.info | coveralls

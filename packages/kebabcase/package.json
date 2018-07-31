@@ -1,13 +1,14 @@
 {
-  "name": "@nielse63/debounce",
+  "name": "@nielse63/kebabcase",
   "version": "0.0.2",
-  "description": "Super small, super slim debounce function for node",
+  "description": "Transform any string into kebab case",
   "keywords": [
-    "debounce",
+    "kebabcase",
+    "string",
     "utilities"
   ],
   "author": "Erik Nielsen <erik@312development.com> (https://312development.com)",
-  "homepage": "https://github.com/nielse63/nielse63/tree/master/packages/debounce",
+  "homepage": "https://github.com/nielse63/nielse63/tree/master/packages/kebabcase",
   "license": "MIT",
   "main": "index.js",
   "directories": {
@@ -15,7 +16,7 @@
     "test": "__tests__"
   },
   "publishConfig": {
-    "access": "public"
+    "public": "true"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,5 @@
   },
   "bugs": {
     "url": "https://github.com/nielse63/nielse63/issues"
-  },
-  "gitHead": "02b8dc12d252bb21ae4159c0224e71feea55581f"
+  }
 }

@@ -4,13 +4,25 @@
   "repository": "https://github.com/nielse63/nielse63.git",
   "author": "Erik Nielsen <erik@312development.com> (https://312development.com)",
   "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "pub": "lerna publish --force-publish=* --exact --skip-temp-tag",
-    "new": "lerna --access=public --license=MIT create",
-    "clean": "lerna clean --yes"
+    "release": "lerna publish --exact --independent",
+    "new": "lerna create",
+    "clean": "lerna clean --yes && rm -rf node_modules *.log coverage templates",
+    "bootstrap": "yarn && lerna bootstrap",
+    "lint": "eslint . --fix",
+    "test": "jest"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.6",
     "eslint": "^5.2.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-unicorn": "^5.0.0",
+    "jest": "^23.4.2",
     "lerna": "^3.0.0-rc.0"
   }
 }

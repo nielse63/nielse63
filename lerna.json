@@ -3,9 +3,10 @@
   "packages": [
     "packages/*"
   ],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
   "command": {
     "publish": {
-      "access": "public",
       "npmClient": "yarn",
       "allowBranch": "master",
       "ignoreChanges": [

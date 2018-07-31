@@ -15,9 +15,6 @@
   "directories": {
     "lib": "lib"
   },
-  "files": [
-    "lib"
-  ],
   "publishConfig": {
     "access": "public"
   },
@@ -39,11 +36,7 @@
     "eslint-plugin-unicorn": "^5.0.0"
   },
   "peerDependencies": {
-    "babel-eslint": "^8.2.6",
-    "eslint": "^5.2.0",
-    "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-unicorn": "^5.0.0"
+    "eslint": "^5.2.0"
   },
   "gitHead": "02b8dc12d252bb21ae4159c0224e71feea55581f"
 }

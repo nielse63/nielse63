@@ -16,7 +16,7 @@
     "test": "__tests__"
   },
   "publishConfig": {
-    "public": "true"
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,5 @@
   "bugs": {
     "url": "https://github.com/nielse63/nielse63/issues"
   },
-  "gitHead": "9c958d1fddccb5bd356ccc79db49e87771b257b5"
+  "gitHead": "a6f3e9f13e6d8094fed547d2753754249dafe4ff"
 }

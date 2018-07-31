@@ -1,6 +1,6 @@
 {
   "name": "@nielse63/capitalize",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Capitalize the first letter of any string",
   "keywords": [
     "string",

@@ -1,6 +1,6 @@
 {
   "name": "@nielse63/kebabcase",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Transform any string into kebab case",
   "keywords": [
     "kebabcase",

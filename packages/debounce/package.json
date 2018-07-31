@@ -1,6 +1,6 @@
 {
   "name": "@nielse63/debounce",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Lightweight debounce function for node",
   "keywords": [
     "debounce",
@@ -26,6 +26,5 @@
   },
   "bugs": {
     "url": "https://github.com/nielse63/nielse63/issues"
-  },
-  "gitHead": "02b8dc12d252bb21ae4159c0224e71feea55581f"
+  }
 }

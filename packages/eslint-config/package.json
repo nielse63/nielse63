@@ -1,6 +1,6 @@
 {
   "name": "@nielse63/eslint-config",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Shareable eslint config that combines the airbnb config with unicorn",
   "keywords": [
     "eslint",
@@ -37,6 +37,5 @@
   },
   "peerDependencies": {
     "eslint": "^5.2.0"
-  },
-  "gitHead": "02b8dc12d252bb21ae4159c0224e71feea55581f"
+  }
 }

@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "release": "lerna publish --exact --yes",
+    "release": "lerna publish --cd-version=patch --exact --yes",
     "new": "node scripts/new",
     "clean": "lerna clean --yes && rm -rf node_modules *.log coverage templates",
     "bootstrap": "yarn && lerna bootstrap",

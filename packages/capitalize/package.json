@@ -1,0 +1,31 @@
+{
+  "name": "@nielse63/capitalize",
+  "version": "0.0.2",
+  "description": "Capitalize the first letter of any string",
+  "keywords": [
+    "string",
+    "capitalize",
+    "utilities"
+  ],
+  "author": "Erik Nielsen <erik@312development.com> (https://312development.com)",
+  "homepage": "https://github.com/nielse63/nielse63/tree/master/packages/capitalize",
+  "license": "MIT",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "publishConfig": {
+    "public": "true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nielse63/nielse63.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/nielse63/nielse63/issues"
+  }
+}

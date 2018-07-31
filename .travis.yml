@@ -12,9 +12,6 @@ dist: trusty
 # hooks
 before_install:
   - npm config set spin false
-  - npm i -g lerna
-after_install:
-  - lerna bootstrap
 
 # env vars
 env:

@@ -1,0 +1,14 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "packages/capitalize/package.json",
+        "packages/debounce/package.json",
+        "packages/eslint-config/package.json",
+        "packages/kebabcase/package.json",
+        "packages/titlecase/package.json"
+      ]
+    }
+  }
+}

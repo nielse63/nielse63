@@ -1,5 +1,5 @@
 
-module.exports = (func, wait = 250, immediate = false) => {
+module.exports = (callback, delay = 250, immediate = false) => {
   let timeout = null;
 
   return function fn(...args) {
@@ -10,11 +10,11 @@ module.exports = (func, wait = 250, immediate = false) => {
     }
 
     function exec() {
-      return func.apply(context, ...args);
+      return callback.apply(context, ...args);
     }
 
     if (immediate && !timeout) exec();
     clear();
-    if (!immediate) timeout = setTimeout(exec, wait);
+    if (!immediate) timeout = setTimeout(exec, delay);
   };
 };

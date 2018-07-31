@@ -1,6 +1,6 @@
 # `titlecase`
 
-> TODO: description
+> Capitalize the first letter of each word
 
 ## Installation
 
@@ -16,7 +16,8 @@ npm install --dev @nielse63/titlecase
 ```js
 const titlecase = require('@nielse63/titlecase');
 
-// TODO: DEMONSTRATE API
+const output = titlecase('some string of mine');
+// "Some String Of Mine"
 ```
 
 ## Contributing

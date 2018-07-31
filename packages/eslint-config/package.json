@@ -1,7 +1,7 @@
 {
   "name": "@nielse63/eslint-config",
   "version": "0.0.2",
-  "description": "My custom eslint-config",
+  "description": "Shareable eslint config that combines the airbnb config with unicorn",
   "keywords": [
     "eslint",
     "lint",

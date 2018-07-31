@@ -16,7 +16,8 @@ npm install --dev @nielse63/capitalize
 ```js
 const capitalize = require('@nielse63/capitalize');
 
-// TODO: DEMONSTRATE API
+const output = capitalize('some string of mine');
+// Some string of mine
 ```
 
 ## Contributing

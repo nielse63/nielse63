@@ -13,11 +13,18 @@ describe('@nielse63/debounce', () => {
   });
 
   it('should call function', (done) => {
-    const fn = jest.fn(() => true);
+    let time = null;
+    const fn = jest.fn(() => {
+      time = Date.now();
+    });
     const debounced = debounce(fn);
+    const now = Date.now();
     debounced();
     setTimeout(() => {
+      const diff = time - now;
       expect(fn).toBeCalled();
+      expect(diff).toBeGreaterThanOrEqual(250);
+      expect(diff).toBeLessThan(260);
       done();
     }, 500);
   });

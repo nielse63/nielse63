@@ -37,3 +37,6 @@ jobs:
     - stage: tests
       script: yarn test
       name: "Unit Tests"
+      after_success:
+        - npm i -g coveralls
+        - cat coverage/lcov.info | coveralls

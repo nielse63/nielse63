@@ -47,10 +47,11 @@ module.exports = {
         'scripts/**',
       ],
       rules: {
-        'no-console':                        'off',
         'import/no-extraneous-dependencies': ['error', {
           devDependencies: true,
         }],
+        'no-console':              'off',
+        'unicorn/no-process-exit': 'off',
       },
     },
   ],

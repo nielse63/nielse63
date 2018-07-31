@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "release": "lerna publish --exact --independent",
-    "new": "lerna create",
+    "new": "node scripts/new",
     "clean": "lerna clean --yes && rm -rf node_modules *.log coverage templates",
     "bootstrap": "yarn && lerna bootstrap",
     "lint:js": "eslint . --fix",
@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
+    "copy-dir": "^0.4.0",
     "eslint": "^5.2.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",

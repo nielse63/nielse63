@@ -3,6 +3,7 @@
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 [![Build Status](https://travis-ci.org/nielse63/nielse63.svg?branch=master)](https://travis-ci.org/nielse63/nielse63)
 [![Coverage Status](https://coveralls.io/repos/github/nielse63/nielse63/badge.svg?branch=master)](https://coveralls.io/github/nielse63/nielse63?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/nielse63/nielse63.svg)](https://greenkeeper.io/)
 
 <!-- markdownlint-disable MD033 -->
 <img src="logo.png" height="100" align="right">

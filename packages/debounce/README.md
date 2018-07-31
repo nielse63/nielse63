@@ -4,7 +4,7 @@
 
 ## Usage
 
-```
+```js
 const debounce = require('@nielse63/debounce');
 
 // TODO: DEMONSTRATE API

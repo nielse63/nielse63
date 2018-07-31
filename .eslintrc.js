@@ -5,11 +5,11 @@ const errorOrOff = production ? 'error' : 'off';
 const errorOrWarn = production ? 'error' : 'warn';
 
 module.exports = {
-  root: true,
+  root:          true,
   parserOptions: {
-    parser: 'babel-eslint',
+    parser:      'babel-eslint',
     ecmaVersion: 2017,
-    sourceType: 'module',
+    sourceType:  'module',
   },
   extends: [
     'airbnb-base',
@@ -27,20 +27,20 @@ module.exports = {
     'unicorn/explicit-length-check': 'off',
 
     // allow debugger during development
-    'max-len': 'off',
-    'key-spacing': ['warn', { align: 'value' }],
-    'no-console': [errorOrOff, { allow: ['error', 'warn'] }],
-    'func-names': 'error',
-    complexity: ['error', 5],
+    'max-len':            'off',
+    'key-spacing':        ['warn', { align: 'value' }],
+    'no-console':         [errorOrOff, { allow: ['error', 'warn'] }],
+    'func-names':         'error',
+    complexity:           ['error', 5],
     'no-mixed-operators': [errorOrWarn],
-    'no-debugger': [errorOrWarn],
+    'no-debugger':        [errorOrWarn],
   },
   overrides: [
     {
       files: ['**/__tests__/**'],
-      env: {
-        jest: true
-      }
-    }
-  ]
+      env:   {
+        jest: true,
+      },
+    },
+  ],
 };

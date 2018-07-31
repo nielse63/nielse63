@@ -5,16 +5,19 @@
   "author": "Erik Nielsen <erik@312development.com> (https://312development.com)",
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "release": "lerna publish --exact --independent",
     "new": "lerna create",
     "clean": "lerna clean --yes && rm -rf node_modules *.log coverage templates",
     "bootstrap": "yarn && lerna bootstrap",
-    "lint": "eslint . --fix",
+    "lint:js": "eslint . --fix",
+    "lint:md": "markdownlint -i **/node_modules ./*.md packages/*/*.md",
     "test": "jest"
+  },
+  "engines": {
+    "node": ">= 10.x",
+    "npm": ">= 6.x",
+    "yarn": ">= 1.x"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
@@ -23,6 +26,12 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-unicorn": "^5.0.0",
     "jest": "^23.4.2",
-    "lerna": "^3.0.0-rc.0"
+    "lerna": "^3.0.0-rc.0",
+    "lint-staged": "^7.2.0",
+    "markdownlint-cli": "^0.12.0",
+    "yorkie": "^1.0.3"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
   }
 }

@@ -1,6 +1,6 @@
 # `@nielse63/debounce`
 
-> TODO: description
+> Lightweight debounce function for node
 
 ## Installation
 
@@ -16,8 +16,28 @@ npm install --dev @nielse63/debounce
 ```js
 const debounce = require('@nielse63/debounce');
 
-// TODO: DEMONSTRATE API
+const fn = () => {
+  // do something later
+};
+
+debounce(fn); // executed after 250ms
 ```
+
+## API
+
+### `debounce(callback[, delay, immediate])`
+
+<!-- markdownlint-disable MD013 -->
+| Name      | Type     | Description                                    | Default |
+|:----------|:---------|:-----------------------------------------------|:--------|
+| callback  | Function | Callback to execute after `delay`              |         |
+| delay     | Number   | Delay, in ms, before executing `callback`      | 250     |
+| immediate | Boolean  | Whether or not to run the function immediately | false   |
+<!-- markdownlint-enable MD013 -->
+
+#### Returns
+
+`Function` - The wrapper to execute the callback
 
 ## Contributing
 

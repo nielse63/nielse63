@@ -1,6 +1,6 @@
 # `@nielse63/eslint-config`
 
-> TODO: description
+> Shareable eslint config that combines the airbnb config with unicorn
 
 ## Installation
 
@@ -13,10 +13,14 @@ npm install --dev @nielse63/eslint-config
 
 ## Usage
 
-```js
-const eslintConfig = require('@nielse63/eslint-config');
+Use in your `.eslintrc.js` by adding to the `extends` attribute:
 
-// TODO: DEMONSTRATE API
+```js
+{
+  extends: [
+    '@nielse63/eslint-config',
+  ],
+}
 ```
 
 ## Contributing

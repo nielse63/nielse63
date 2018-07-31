@@ -1,6 +1,6 @@
 # `@nielse63/kebabcase`
 
-> TODO: description
+> Transform any string into kebab case
 
 ## Installation
 
@@ -16,7 +16,8 @@ npm install --dev @nielse63/kebabcase
 ```js
 const kebabcase = require('@nielse63/kebabcase');
 
-// TODO: DEMONSTRATE API
+const output = kebabcase('SomeStringOfMine');
+// "some-string-of-mine"
 ```
 
 ## Contributing

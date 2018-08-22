@@ -7,7 +7,6 @@
   "npmClient": "yarn",
   "command": {
     "publish": {
-      "allowBranch": "master",
       "ignoreChanges": [
         "*.md",
         "LICENSE"

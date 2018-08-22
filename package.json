@@ -32,10 +32,10 @@
     "jest": "^23.4.2",
     "lerna": "^3.0.0-rc.0",
     "lint-staged": "^7.2.0",
-    "markdownlint-cli": "^0.12.0",
+    "markdownlint-cli": "^0.13.0",
     "remark": "^9.0.0",
-    "remark-license": "^4.0.1",
-    "yorkie": "^1.0.3"
+    "remark-license": "^5.0.0",
+    "yorkie": "^2.0.0"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"

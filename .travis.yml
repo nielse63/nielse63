@@ -34,3 +34,12 @@ jobs:
       after_success:
         - npm i -g coveralls
         - cat coverage/lcov.info | coveralls
+    - stage: release
+      script: skip
+      name: "Release"
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - yarn release
+        if: branch = master AND type = push

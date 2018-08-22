@@ -1,6 +1,6 @@
 {
   "name": "@nielse63/debounce",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Lightweight debounce function for node",
   "keywords": [
     "debounce",

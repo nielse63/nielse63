@@ -25,15 +25,16 @@ env:
     - JOBS=1
     - NODE_ENV=test
     - secure: JMmVqthUcf7tkDHsyhBImGjBoWx9lbZVZHl6Eoz51MkLN5Rzmt4ZLpCwvmUumUFm1QlYz473l5SH/qXQ08dnbCODP/L781uzfHMqu/cnhNPTmHMi7iSpiD6piDxv0iC2rlyIxlOYgEufAnIJySK9c5DFOLpyo/CKHpFPD7Gp1lFVy96XIbSNQ7Z5bpAjt/FtEQ9QYEjfti2DYwIaLEcn0VZy+xAKkUlUUlDVCwnBb7ESsHyzIdi1OEXlOsAmvuaJbIztyggzHjJzfelvEx3fSzQYA4X7m1jn/fD7D9B2ytaUIM2XOl7r6QOoreLSJwhZMAGDdbJVc9s0LHE47qxlYl5fi7jHTQcEzl9AoHhlrMIhCwY9W9UnwauZiwL5Cf8AD+PR9MyTLS8cTIabQOA2WuB9B8sOH1DCKTWsLb58SNXnSO+svhcCCwdy1VpCPUr/YSPBts+V3z1qo01YjDXFuSQH0D8QDFHHJJMcfUS3GyJBXiEwsUDWJgeNphfl9tx9IABbTVxG8ixhQNqBwpmV6Lo9711YYbTpVvi8WLSj07jk/+D0H25HdPw6+cDaVkGt7hG5OYbukCJ4lJAuYNLT5NtNdj4hEps3ttvnY6O3PGOFgfWqq7aCql7Yshfb+gTccA/vJWQfS9Lq/jQSTqZYct5fBb7bjhK+/0Nj3Mg33Mk=
+    - secure: WwG42cNkYT2Kjvu825+xUprOw9qA4NstikRN7ILOAEYdh+uYjucXrYc5UIgBuszreH7GfpLNxMJO73Au6+MHU5j8a4l3OwpQzPbGXV65wpAZyY/FFJ/IKgx9GqMUEfrGY/MMrJJQ+A1zHwBYTwMsehJPmmL7vhyVQGECIoBc0P2U4r3J6A4vzDXiHXzah7D6GizekMVwH0Uvuhq2wqEtOAU1PckFhNXr01NJEyO7XYjK5oyPAqlwxJnxnFc3O3Q/hjx2V8XCIPZJVLKgsWEKJnJwgEN4ONtvuq4/hVXt6IeFlMhN/WRsUGgMEI+23RtPnQHaLHp5iqOJG+m1ewFZ+SzICz6lsfOSUxmA4wYwHvG0jRmwraG+rnR6Z8NG+AIqTjtPgIKBUMAd8ZqGnFFu7Ij+eZ9k0yNV5olTqOKAXCOzqvk1xnKC/IJHIea0HjrNvy4OpBzb/8MLQayeEWChdIJDCEVC9S+3pmrHtu71mQBXbwdmbajQj706YhE+CVGF4oeIHMZpCuPQmQ+1GiVaLcoUxyoxmC8tZ9C4sAYKcH3erAF0R3OxnqD7Rf+oF2EfR5/ZU4RuAhdHWmMAo2y1CVH9X5ZWyZKGSMQeaK9G3dqOYQdma0PCuSNYECyNARrRHiYvZ2HqbTVPCMqixP74LGzWNWqNANMQdt1tRwIKdyc=
 
 jobs:
   include:
-    # - stage: tests
-    #   script: yarn test
-    #   name: Unit Tests
-    #   after_success:
-    #     - npm i -g coveralls
-    #     - cat coverage/lcov.info | coveralls
+    - stage: tests
+      script: yarn test
+      name: Unit Tests
+      after_success:
+        - npm i -g coveralls
+        - cat coverage/lcov.info | coveralls
     - stage: release
       if: branch = master
       script: echo "Releasing to npm"
@@ -41,15 +42,6 @@ jobs:
       deploy:
         provider: script
         on:
-          # branch: master
-          all_branches: true
+          branch: master
         skip_cleanup: true
-        script: yarn release
-# deploy:
-#   provider: npm
-#   email: erik@312development.com
-#   api_key:
-#     secure: WwG42cNkYT2Kjvu825+xUprOw9qA4NstikRN7ILOAEYdh+uYjucXrYc5UIgBuszreH7GfpLNxMJO73Au6+MHU5j8a4l3OwpQzPbGXV65wpAZyY/FFJ/IKgx9GqMUEfrGY/MMrJJQ+A1zHwBYTwMsehJPmmL7vhyVQGECIoBc0P2U4r3J6A4vzDXiHXzah7D6GizekMVwH0Uvuhq2wqEtOAU1PckFhNXr01NJEyO7XYjK5oyPAqlwxJnxnFc3O3Q/hjx2V8XCIPZJVLKgsWEKJnJwgEN4ONtvuq4/hVXt6IeFlMhN/WRsUGgMEI+23RtPnQHaLHp5iqOJG+m1ewFZ+SzICz6lsfOSUxmA4wYwHvG0jRmwraG+rnR6Z8NG+AIqTjtPgIKBUMAd8ZqGnFFu7Ij+eZ9k0yNV5olTqOKAXCOzqvk1xnKC/IJHIea0HjrNvy4OpBzb/8MLQayeEWChdIJDCEVC9S+3pmrHtu71mQBXbwdmbajQj706YhE+CVGF4oeIHMZpCuPQmQ+1GiVaLcoUxyoxmC8tZ9C4sAYKcH3erAF0R3OxnqD7Rf+oF2EfR5/ZU4RuAhdHWmMAo2y1CVH9X5ZWyZKGSMQeaK9G3dqOYQdma0PCuSNYECyNARrRHiYvZ2HqbTVPCMqixP74LGzWNWqNANMQdt1tRwIKdyc=
-#   on:
-#     branch: master
-#     tags: true
+        script: yarn release --skip-git

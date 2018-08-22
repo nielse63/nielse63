@@ -23,11 +23,11 @@ env:
   global:
     - JOBS=1
     - NODE_ENV=test
+    - secure: JMmVqthUcf7tkDHsyhBImGjBoWx9lbZVZHl6Eoz51MkLN5Rzmt4ZLpCwvmUumUFm1QlYz473l5SH/qXQ08dnbCODP/L781uzfHMqu/cnhNPTmHMi7iSpiD6piDxv0iC2rlyIxlOYgEufAnIJySK9c5DFOLpyo/CKHpFPD7Gp1lFVy96XIbSNQ7Z5bpAjt/FtEQ9QYEjfti2DYwIaLEcn0VZy+xAKkUlUUlDVCwnBb7ESsHyzIdi1OEXlOsAmvuaJbIztyggzHjJzfelvEx3fSzQYA4X7m1jn/fD7D9B2ytaUIM2XOl7r6QOoreLSJwhZMAGDdbJVc9s0LHE47qxlYl5fi7jHTQcEzl9AoHhlrMIhCwY9W9UnwauZiwL5Cf8AD+PR9MyTLS8cTIabQOA2WuB9B8sOH1DCKTWsLb58SNXnSO+svhcCCwdy1VpCPUr/YSPBts+V3z1qo01YjDXFuSQH0D8QDFHHJJMcfUS3GyJBXiEwsUDWJgeNphfl9tx9IABbTVxG8ixhQNqBwpmV6Lo9711YYbTpVvi8WLSj07jk/+D0H25HdPw6+cDaVkGt7hG5OYbukCJ4lJAuYNLT5NtNdj4hEps3ttvnY6O3PGOFgfWqq7aCql7Yshfb+gTccA/vJWQfS9Lq/jQSTqZYct5fBb7bjhK+/0Nj3Mg33Mk=
 
 # build stage defs
 jobs:
   include:
-    # run tests
     - stage: tests
       script: yarn test
       name: "Unit Tests"

@@ -8,7 +8,7 @@ Install with Yarn or npm
 
 ```bash
 yarn add --dev @nielse63/eslint-config
-npm install --dev @nielse63/eslint-config
+npm install --save-dev @nielse63/eslint-config
 ```
 
 ## Usage

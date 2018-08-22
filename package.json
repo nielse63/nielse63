@@ -12,7 +12,8 @@
     "bootstrap": "yarn && lerna bootstrap",
     "lint:js": "eslint . --fix",
     "lint:md": "markdownlint -i **/node_modules ./*.md packages/*/*.md",
-    "test": "jest"
+    "test": "jest",
+    "commit": "git add . && git cz"
   },
   "engines": {
     "node": ">= 10.x",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
+    "commitizen": "^2.10.1",
     "copy-dir": "^0.4.0",
     "eslint": "^5.2.0",
     "eslint-config-airbnb-base": "^13.0.0",
@@ -37,5 +39,10 @@
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }

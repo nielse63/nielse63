@@ -8,7 +8,7 @@ Install with Yarn or npm
 
 ```bash
 yarn add --dev @nielse63/{{package}}
-npm install --dev @nielse63/{{package}}
+npm install --save-dev @nielse63/{{package}}
 ```
 
 ## Usage

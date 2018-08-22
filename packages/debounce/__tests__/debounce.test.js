@@ -38,4 +38,20 @@ describe('@nielse63/debounce', () => {
       done();
     }, 500);
   });
+
+  it('should delay/wait execution', (done) => {
+    let count = 0;
+    const fn = jest.fn(() => true);
+    const debounced = debounce(fn, 100);
+    const interval = setInterval(() => {
+      debounced();
+      count += 1;
+      if (count > 3) {
+        clearInterval(interval);
+      }
+    }, 15);
+    setTimeout(() => {
+      done();
+    }, 500);
+  });
 });

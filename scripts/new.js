@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const copydir = require('copy-dir');
 const globby = require('globby');
+const { version } = require('../lerna.json');
 
 function snakeCase(string) {
   return string.replace(/-[a-z\u00E0-\u00F6\u00F8-\u00FE]/g, match => match.slice(1).toUpperCase());
@@ -25,7 +26,8 @@ copydir(templateDir, destDir, async (err) => {
     const content = fs.readFileSync(filepath, 'utf8');
     const output = content
       .replace(/{{package}}/g, name)
-      .replace(/{{snakeName}}/g, snakeName);
+      .replace(/{{snakeName}}/g, snakeName)
+      .replace(/{{version}}/g, version);
     fs.writeFileSync(filepath, output, 'utf8');
     if (filepath.includes('{{package}}')) {
       const newFilePath = filepath.replace('{{package}}', name);

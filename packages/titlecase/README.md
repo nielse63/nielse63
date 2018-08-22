@@ -8,7 +8,7 @@ Install with Yarn or npm
 
 ```bash
 yarn add --dev @nielse63/titlecase
-npm install --dev @nielse63/titlecase
+npm install --save-dev @nielse63/titlecase
 ```
 
 ## Usage

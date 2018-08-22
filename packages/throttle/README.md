@@ -1,26 +1,27 @@
-# `@nielse63/debounce`
+# `@nielse63/throttle`
 
-> Lightweight debounce function for node
+> Creates a throttled function that's evoked only as frequently as you want it to
 
 ## Installation
 
 Install with Yarn or npm
 
 ```bash
-yarn add --dev @nielse63/debounce
-npm install --save-dev @nielse63/debounce
+yarn add --dev @nielse63/throttle
+npm install --save-dev @nielse63/throttle
 ```
 
 ## Usage
 
 ```js
-const debounce = require('@nielse63/debounce');
+const throttle = require('@nielse63/throttle');
 
-const fn = () => {
+function callback() {
   // some expensive function...
-};
+}
 
-debounce(fn); // executed after 250ms
+window.addEventListener('scroll', throttle(callback, 150), false);
+// `callback` is only executed once every 150ms
 ```
 
 ## API
@@ -28,11 +29,10 @@ debounce(fn); // executed after 250ms
 ### `debounce(callback[, delay, immediate])`
 
 <!-- markdownlint-disable MD013 -->
-| Name      | Type     | Description                                    | Default   |
-|:----------|:---------|:-----------------------------------------------|:----------|
-| callback  | Function | Callback to execute after `delay`              | undefined |
-| delay     | Number   | Delay, in ms, before executing `callback`      | 250       |
-| immediate | Boolean  | Whether or not to run the function immediately | false     |
+| Name     | Type     | Description                               | Default   |
+|:---------|:---------|:------------------------------------------|:----------|
+| callback | Function | Callback to execute after `delay` ms      | undefined |
+| wait     | Number   | Delay, in ms, before executing `callback` | 250       |
 <!-- markdownlint-enable MD013 -->
 
 ### Return Value

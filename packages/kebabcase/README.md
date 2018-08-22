@@ -8,7 +8,7 @@ Install with Yarn or npm
 
 ```bash
 yarn add --dev @nielse63/kebabcase
-npm install --dev @nielse63/kebabcase
+npm install --save-dev @nielse63/kebabcase
 ```
 
 ## Usage

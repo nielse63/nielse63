@@ -1,6 +1,6 @@
 {
   "name": "@nielse63/{{package}}",
-  "version": "0.0.0",
+  "version": "{{version}}",
   "description": "",
   "keywords": [],
   "author": "Erik Nielsen <erik@312development.com> (https://312development.com)",

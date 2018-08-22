@@ -8,7 +8,7 @@ Install with Yarn or npm
 
 ```bash
 yarn add --dev @nielse63/debounce
-npm install --dev @nielse63/debounce
+npm install --save-dev @nielse63/debounce
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ npm install --dev @nielse63/debounce
 const debounce = require('@nielse63/debounce');
 
 const fn = () => {
-  // do something later
+  // some expensive function...
 };
 
 debounce(fn); // executed after 250ms
@@ -28,14 +28,14 @@ debounce(fn); // executed after 250ms
 ### `debounce(callback[, delay, immediate])`
 
 <!-- markdownlint-disable MD013 -->
-| Name      | Type     | Description                                    | Default |
-|:----------|:---------|:-----------------------------------------------|:--------|
-| callback  | Function | Callback to execute after `delay`              |         |
-| delay     | Number   | Delay, in ms, before executing `callback`      | 250     |
-| immediate | Boolean  | Whether or not to run the function immediately | false   |
+| Name      | Type     | Description                                    | Default   |
+|:----------|:---------|:-----------------------------------------------|:----------|
+| callback  | Function | Callback to execute after `delay`              | undefined |
+| delay     | Number   | Delay, in ms, before executing `callback`      | 250       |
+| immediate | Boolean  | Whether or not to run the function immediately | false     |
 <!-- markdownlint-enable MD013 -->
 
-#### Returns
+### Return Value
 
 `Function` - The wrapper to execute the callback
 

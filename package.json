@@ -35,7 +35,7 @@
     "markdownlint-cli": "^0.12.0",
     "remark": "^9.0.0",
     "remark-license": "^4.0.1",
-    "yorkie": "^1.0.3"
+    "yorkie": "^2.0.0"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"

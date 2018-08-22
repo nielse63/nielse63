@@ -2,6 +2,8 @@
 
 > Capitalize the first letter of any string
 
+[![Known Vulnerabilities](https://snyk.io/test/github/nielse63/nielse63/badge.svg?targetFile=packages%2Fcapitalize%2Fpackage.json)](https://snyk.io/test/github/nielse63/nielse63?targetFile=packages%2Fcapitalize%2Fpackage.json)
+
 ## Installation
 
 Install with Yarn or npm

@@ -2,6 +2,8 @@
 
 > Transform any string into kebab case
 
+[![Known Vulnerabilities](https://snyk.io/test/github/nielse63/nielse63/badge.svg?targetFile=packages%2Fkebabcase%2Fpackage.json)](https://snyk.io/test/github/nielse63/nielse63?targetFile=packages%2Fkebabcase%2Fpackage.json)
+
 ## Installation
 
 Install with Yarn or npm

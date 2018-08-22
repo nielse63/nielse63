@@ -2,6 +2,8 @@
 
 > Lightweight debounce function for node
 
+[![Known Vulnerabilities](https://snyk.io/test/github/nielse63/nielse63/badge.svg?targetFile=packages%2Fdebounce%2Fpackage.json)](https://snyk.io/test/github/nielse63/nielse63?targetFile=packages%2Fdebounce%2Fpackage.json)
+
 ## Installation
 
 Install with Yarn or npm
@@ -29,7 +31,7 @@ debounce(fn); // executed after 250ms
 
 <!-- markdownlint-disable MD013 -->
 | Name      | Type     | Description                                    | Default   |
-|:----------|:---------|:-----------------------------------------------|:----------|
+| :-------- | :------- | :--------------------------------------------- | :-------- |
 | callback  | Function | Callback to execute after `delay`              | undefined |
 | delay     | Number   | Delay, in ms, before executing `callback`      | 250       |
 | immediate | Boolean  | Whether or not to run the function immediately | false     |

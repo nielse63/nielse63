@@ -2,6 +2,8 @@
 
 > Creates a throttled function that's evoked only as frequently as you want it to
 
+[![Known Vulnerabilities](https://snyk.io/test/github/nielse63/nielse63/badge.svg?targetFile=packages%2Fthrottle%2Fpackage.json)](https://snyk.io/test/github/nielse63/nielse63?targetFile=packages%2Fthrottle%2Fpackage.json)
+
 ## Installation
 
 Install with Yarn or npm
@@ -30,7 +32,7 @@ window.addEventListener('scroll', throttle(callback, 150), false);
 
 <!-- markdownlint-disable MD013 -->
 | Name     | Type     | Description                               | Default   |
-|:---------|:---------|:------------------------------------------|:----------|
+| :------- | :------- | :---------------------------------------- | :-------- |
 | callback | Function | Callback to execute after `delay` ms      | undefined |
 | wait     | Number   | Delay, in ms, before executing `callback` | 250       |
 <!-- markdownlint-enable MD013 -->

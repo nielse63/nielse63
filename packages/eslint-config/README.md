@@ -2,6 +2,8 @@
 
 > Shareable eslint config that combines the airbnb config with unicorn
 
+[![Known Vulnerabilities](https://snyk.io/test/github/nielse63/nielse63/badge.svg?targetFile=packages%2Feslint-config%2Fpackage.json)](https://snyk.io/test/github/nielse63/nielse63?targetFile=packages%2Feslint-config%2Fpackage.json)
+
 ## Installation
 
 Install with Yarn or npm

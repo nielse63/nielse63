@@ -1,9 +1,16 @@
 {
-  "*.js": [
-    "eslint --fix",
-    "git add"
-  ],
-  "*.md": [
-    "markdownlint"
+  "linters": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.md": [
+      "markdownlint"
+    ]
+  },
+  "ignore": [
+    "**/.github/**",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md"
   ]
 }

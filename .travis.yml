@@ -36,6 +36,7 @@ jobs:
         - npm i -g coveralls
         - cat coverage/lcov.info | coveralls
     - stage: release
+      if: branch = master
       script: echo "Releasing to npm"
       name: "Release"
       deploy:

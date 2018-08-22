@@ -809,6 +809,10 @@ atob@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.1.tgz#ae2d5a729477f289d60dd7f96a6314a22dd6c22a"
 
+author-regex@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/author-regex/-/author-regex-1.0.0.tgz#d08885be6b9bbf9439fe087c76287245f0a81450"
+
 aws-sign2@~0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"
@@ -4698,6 +4702,12 @@ pad-right@^0.2.2:
   dependencies:
     repeat-string "^1.5.2"
 
+parse-author@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/parse-author/-/parse-author-2.0.0.tgz#d3460bf1ddd0dfaeed42da754242e65fb684a81f"
+  dependencies:
+    author-regex "^1.0.0"
+
 parse-entities@^1.0.2, parse-entities@^1.1.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/parse-entities/-/parse-entities-1.1.2.tgz#9eaf719b29dc3bd62246b4332009072e01527777"
@@ -5119,11 +5129,13 @@ registry-url@^3.0.3:
   dependencies:
     rc "^1.0.1"
 
-remark-license@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/remark-license/-/remark-license-4.0.1.tgz#704966f97fdb988d61af5965f917d1436d48ece3"
+remark-license@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/remark-license/-/remark-license-5.0.0.tgz#2d6927a7d704576e9bce905c1a867a7b9b6b2837"
   dependencies:
     mdast-util-heading-range "^2.0.0"
+    parse-author "^2.0.0"
+    spdx-license-list "^4.1.0"
 
 remark-parse@^5.0.0:
   version "5.0.0"
@@ -5597,6 +5609,10 @@ spdx-expression-parse@^3.0.0:
 spdx-license-ids@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-3.0.0.tgz#7a7cd28470cc6d3a1cfe6d66886f6bc430d3ac87"
+
+spdx-license-list@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/spdx-license-list/-/spdx-license-list-4.1.0.tgz#29cfa3248a45fdf314b9a82974c06fb3b9352b89"
 
 split-string@^3.0.1, split-string@^3.0.2:
   version "3.1.0"

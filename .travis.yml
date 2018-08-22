@@ -28,12 +28,12 @@ env:
 
 jobs:
   include:
-    - stage: tests
-      script: yarn test
-      name: Unit Tests
-      after_success:
-        - npm i -g coveralls
-        - cat coverage/lcov.info | coveralls
+    # - stage: tests
+    #   script: yarn test
+    #   name: Unit Tests
+    #   after_success:
+    #     - npm i -g coveralls
+    #     - cat coverage/lcov.info | coveralls
     - stage: release
       if: branch = master
       script: echo "Releasing to npm"
@@ -41,7 +41,8 @@ jobs:
       deploy:
         provider: script
         on:
-          branch: master
+          # branch: master
+          all_branches: true
         skip_cleanup: true
         script: yarn release
 # deploy:

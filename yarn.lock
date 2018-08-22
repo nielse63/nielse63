@@ -4706,6 +4706,12 @@ package-json@^4.0.1:
     registry-url "^3.0.3"
     semver "^5.1.0"
 
+pad-right@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/pad-right/-/pad-right-0.2.2.tgz#6fbc924045d244f2a2a244503060d3bfc6009774"
+  dependencies:
+    repeat-string "^1.5.2"
+
 parse-author@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/parse-author/-/parse-author-2.0.0.tgz#d3460bf1ddd0dfaeed42da754242e65fb684a81f"

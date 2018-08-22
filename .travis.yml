@@ -12,6 +12,11 @@ dist: trusty
 # hooks
 before_install:
   - npm config set spin false
+  - npm i -g http-server greenkeeper-lockfile@2
+before_script:
+  - greenkeeper-lockfile-update
+after_script:
+  - greenkeeper-lockfile-upload
 
 # env vars
 env:

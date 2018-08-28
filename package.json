@@ -1,10 +1,8 @@
 {
   "author": "Erik Nielsen <erik@312development.com> (https://312development.com)",
+  "version": "0.1.4",
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "release": "lerna publish --npm-tag next --yes",
     "new": "node scripts/new",
@@ -21,17 +19,17 @@
     "yarn": ">= 1.x"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.6",
+    "babel-eslint": "^9.0.0",
     "commitizen": "^2.10.1",
     "copy-dir": "^0.4.0",
-    "eslint": "^5.2.0",
-    "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-plugin-import": "^2.13.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-unicorn": "^6.0.0",
     "globby": "^8.0.1",
-    "jest": "^23.4.2",
-    "lerna": "^3.0.0-rc.0",
-    "lint-staged": "^7.2.0",
+    "jest": "^23.5.0",
+    "lerna": "^3.1.4",
+    "lint-staged": "^7.2.2",
     "markdownlint-cli": "^0.13.0",
     "remark": "^9.0.0",
     "remark-license": "^5.0.0",
@@ -42,7 +40,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "cz-conventional-changelog"
+      "path": "cz-emoji"
     }
   }
 }

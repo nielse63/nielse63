@@ -28,15 +28,11 @@
   "bugs": {
     "url": "https://github.com/nielse63/nielse63/issues"
   },
-  "devDependencies": {
-    "babel-eslint": "^8.2.6",
-    "eslint": "^5.2.0",
-    "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-plugin-import": "^2.13.0",
+  "dependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-unicorn": "^6.0.0"
-  },
-  "peerDependencies": {
-    "eslint": "^5.2.0"
-  },
-  "gitHead": "a6f3e9f13e6d8094fed547d2753754249dafe4ff"
+  }
 }

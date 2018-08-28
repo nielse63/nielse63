@@ -21,7 +21,7 @@
     "yarn": ">= 1.x"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.6",
+    "babel-eslint": "^9.0.0",
     "commitizen": "^2.10.1",
     "copy-dir": "^0.4.0",
     "eslint": "^5.2.0",

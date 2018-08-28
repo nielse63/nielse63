@@ -29,7 +29,7 @@
     "url": "https://github.com/nielse63/nielse63/issues"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.6",
+    "babel-eslint": "^9.0.0",
     "eslint": "^5.2.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",

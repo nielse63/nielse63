@@ -24,6 +24,7 @@
 ### Concurrency
 
 - [@nielse63/debounce](https://github.com/nielse63/nielse63/tree/master/packages/debounce)
+- [@nielse63/throttle](https://github.com/nielse63/nielse63/tree/master/packages/throttle)
 
 ### Linter Configs
 

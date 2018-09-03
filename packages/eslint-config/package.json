@@ -33,7 +33,7 @@
     "eslint": "^5.2.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-unicorn": "^6.0.0"
+    "eslint-plugin-unicorn": "^6.0.1"
   },
   "peerDependencies": {
     "eslint": "^5.2.0"
